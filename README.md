@@ -2,7 +2,7 @@
 
 Blur faces (or whole people) live from a webcam or in a video file, using a **Google Coral USB Accelerator**.
 
-[**⬇ Download the latest release**](https://github.com/USERNAME/Face-Blur-Coral/releases/latest)
+[**⬇ Download the latest release**](https://github.com/MF496/Face-Blur-Coral/releases/latest)
 
 ## Requirements
 
@@ -12,7 +12,7 @@ Blur faces (or whole people) live from a webcam or in a video file, using a **Go
 
 ## Install (Linux)
 
-Download [faceblur_amd64.deb](https://github.com/USERNAME/Face-Blur-Coral/releases/latest/download/faceblur_amd64.deb) and install it:
+Download [faceblur_amd64.deb](https://github.com/MF496/Face-Blur-Coral/releases/latest/download/faceblur_amd64.deb) and install it:
 
 ```bash
 sudo apt install ./faceblur_amd64.deb
