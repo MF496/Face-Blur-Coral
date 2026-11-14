@@ -21,7 +21,7 @@ sudo apt install ./faceblur_amd64.deb
 Or do both in the terminal:
 
 ```bash
-wget https://github.com/USERNAME/Face-Blur-Coral/releases/latest/download/faceblur_amd64.deb
+wget https://github.com/MF496/Face-Blur-Coral/releases/latest/download/faceblur_amd64.deb
 sudo apt install ./faceblur_amd64.deb
 ```
 
