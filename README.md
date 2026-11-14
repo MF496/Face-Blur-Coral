@@ -1,28 +1,42 @@
 # Face-Blur-Coral
-A face blurring software using coral ai accelerator.
 
-**Download**
+Blur faces (or whole people) live from a webcam or in a video file, using a **Google Coral USB Accelerator**.
 
-[Download it from here](https://github.com/MF496/Face-Blur-Coral/releases/tag/v1.0.1)
+[**⬇ Download the latest release**](https://github.com/USERNAME/Face-Blur-Coral/releases/latest)
 
-**Requirments**
+## Requirements
 
-Coral AI USB Accelerator
+- [Coral USB Accelerator](https://coral.ai/products/accelerator) with its driver installed (`libedgetpu1-std`)
+- A webcam (or a video file to blur)
+- Linux (Debian / Ubuntu)
 
-[You can get one here](https://gweb-coral-full.uc.r.appspot.com/products/accelerator/)
+## Install (Linux)
 
-Webcam
+Download [faceblur_amd64.deb](https://github.com/USERNAME/Face-Blur-Coral/releases/latest/download/faceblur_amd64.deb) and install it:
 
-**Windows installer**
+```bash
+sudo apt install ./faceblur_amd64.deb
+```
 
-Work in progress...
+Or do both in the terminal:
 
+```bash
+wget https://github.com/USERNAME/Face-Blur-Coral/releases/latest/download/faceblur_amd64.deb
+sudo apt install ./faceblur_amd64.deb
+```
 
-**Linux installer (Debian):**
+Then open **Face Blur** from the app menu, or run `faceblur --help` in a terminal.
 
-Currently a .deb package that install an app.
+**Windows installer:** work in progress.
 
+## How it works
 
-**How it works:**
+A Python script sends each camera frame to an AI model running on the Coral, which finds the faces (or people) in the picture. The script then covers each of those areas with a blur or pixelation, set by you.
 
-A simple python script calls a AI model run on the Coral that detects objects to blur (People). Then the python script pastes over that selected area a blur patter set by you. [Model is pulled from here](https://github.com/google-coral/examples-camera)
+The models come from [google-coral/test_data](https://github.com/google-coral/test_data).
+
+## Uninstall
+
+```bash
+sudo apt remove faceblur
+```
