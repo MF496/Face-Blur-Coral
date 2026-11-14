@@ -1,6 +1,10 @@
 # Face-Blur-Coral
 A face blurring software using coral ai accelerator.
 
+#Download
+
+Download it from 
+
 **Requirments**
 
 Coral AI USB Accelerator
